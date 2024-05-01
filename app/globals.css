@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-background: theme('colors.slate.900');
+  --secondary-background: theme('colors.slate.800');
+  --primary-text: theme('colors.slate.300');
+  --secondary-text: theme('colors.slate.400');
+}
+
+.my-container {
+  @apply container mx-auto max-w-7xl px-5 sm:px-10;
+}
+
+/* Background colors */
+
+.bg-primary {
+  @apply bg-[var(--primary-background)];
+}
+
+.bg-primary-accent {
+  @apply bg-[var(--primary-text)];
+}
+
+.bg-secondary {
+  @apply bg-[var(--secondary-background)];
+}
+
+/* Text colors */
+
+.text-primary {
+  @apply text-[var(--primary-text)];
+}
+
+.text-secondary {
+  @apply text-[var(--secondary-text)];
+}
+
+.text-link {
+  @apply underline text-accent
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-accent to-accentSidecar inline-block text-transparent bg-clip-text
+}
+
+/* Border colors */
+
+.border-body {
+  @apply border-[var(--primary-text)];
+}
